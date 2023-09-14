@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .popper-content {
+        @apply p-10;
+    }
+
+    .custom-class {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    }
+
+    .select2 {
+        @apply w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white min-w-[250px];
+    }
+
+    .select2.select2-container {
+        @apply ring-0;
+    }
+
+    span.select2.select2-container.select2-container--default {
+        @apply w-full !important;
+    }
+
+    .select2.select2-container--open {
+        @apply ring-blue-500 border-blue-500 ring-1;
+    }
+
+    .selection .select2-selection__arrow {
+        @apply hidden;
+    }
+
+    .selection .select2-selection.select2-selection--single {
+        @apply bg-transparent border-none;
+    }
+}
